@@ -29,7 +29,59 @@
       <section>
         <h2>Formulario de aportación</h2>
         <form action="#" method="post">
-          
+          <fieldset>
+            <legend>Elige tu modalidad o recompensa</legend>
+            <label>
+              <input type="radio" name="reward" value="donacion-altruista" required />
+              Donación altruista (sin recompensa física)
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="reward" value="nivel-1" />
+              Nivel 1: Impulso KAXKO (15 €)
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="reward" value="nivel-2" />
+              Nivel 2: Capa Base - Chaleco (75 €)
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="reward" value="nivel-3" />
+              Nivel 3: Pack Early Bird 3 en 1 (189 €)
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="reward" value="nivel-4" />
+              Nivel 4: Pack Estándar 3 en 1 (220 €)
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="reward" value="nivel-5" />
+              Nivel 5: Expedición Dúo (399 €)
+            </label>
+            <br />
+            <label for="amount">Importe a aportar (€)</label>
+            <input id="amount" name="amount" type="number" min="5" max="5000" required />
+            <br />
+            <label for="size">Talla preferida</label>
+            <select id="size" name="size">
+              <option value="no-aplica">No aplica</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+            </select>
+            <br />
+            <label for="color">Color preferido</label>
+            <select id="color" name="color">
+              <option value="no-aplica">No aplica</option>
+              <option value="negro-pizarra">Negro Pizarra</option>
+              <option value="verde-bosque">Verde Bosque</option>
+              <option value="azul-glaciar">Azul Glaciar</option>
+            </select>
+          </fieldset>
           <button type="submit">Aportar</button>
         </form>
       </section>
