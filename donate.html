@@ -32,7 +32,12 @@
           <fieldset>
             <legend>Elige tu modalidad o recompensa</legend>
             <label>
-              <input type="radio" name="reward" value="donacion-altruista" required />
+              <input
+                type="radio"
+                name="reward"
+                value="donacion-altruista"
+                required
+              />
               Donación altruista (sin recompensa física)
             </label>
             <br />
@@ -62,7 +67,14 @@
             </label>
             <br />
             <label for="amount">Importe a aportar (€)</label>
-            <input id="amount" name="amount" type="number" min="5" max="5000" required />
+            <input
+              id="amount"
+              name="amount"
+              type="number"
+              min="5"
+              max="5000"
+              required
+            />
             <br />
             <label for="size">Talla preferida</label>
             <select id="size" name="size">
@@ -82,10 +94,50 @@
               <option value="azul-glaciar">Azul Glaciar</option>
             </select>
           </fieldset>
+          <fieldset>
+            <legend>Datos del mecenas y envío</legend>
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" type="text" required />
+            <br />
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required />
+            <br />
+            <label for="phone">Teléfono de contacto</label>
+            <input id="phone" name="phone" type="tel" required />
+            <br />
+            <label for="address">Dirección postal completa</label>
+            <input id="address" name="address" type="text" required />
+            <br />
+            <label for="postalCode">Código postal</label>
+            <input
+              id="postalCode"
+              name="postalCode"
+              type="number"
+              pattern="[0-9]{5}"
+              maxlength="5"
+              required
+            />
+          </fieldset>
+          <label>
+            <input type="checkbox" name="terms" required />
+            He leído y acepto las condiciones del micromecenazgo
+          </label>
+          <br />
           <button type="submit">Aportar</button>
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>KAXKO — Proyecto académico de micromecenazgo.</p>
+      <p>Contacto<br /><a href="mailto:hola@kaxko.com">hola@kaxko.com</a></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">El proyecto</a></li>
+          <li><a href="donate.html">Aporta</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 KAXKO. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
